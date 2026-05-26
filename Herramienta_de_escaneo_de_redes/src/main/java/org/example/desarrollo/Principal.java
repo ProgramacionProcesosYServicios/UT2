@@ -10,7 +10,6 @@ public class Principal {
         System.out.print("Introduce la subred de 24 bits (ej: 192.168.1 o 127.0.0): ");
         String subred = teclado.nextLine().trim();
 
-        // Validamos el formato basico X.X.X (tres bloques de numeros separados por puntos)
         if (!subred.matches("^\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}$")) {
             System.out.println("Error: El formato de la subred debe ser X.X.X (ejemplo: 192.168.0)");
             return;
